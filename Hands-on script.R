@@ -6,7 +6,7 @@
 ### Packages ### 
 ################
 
-devtools::install_github("filipematias23/FIELDimageR.Extra")
+#devtools::install_github("filipematias23/FIELDimageR.Extra")
 devtools::install_github("OpenDroneMap/FIELDimageR")
 
 library(FIELDimageR)
@@ -180,7 +180,7 @@ DataTotal<- fieldInfo_extra(mosaic = Test.Indices,
                             fun = "mean")
 
 View(DataTotal)
-
+DataTotal<-cbind(fieldShape, DataTotal[,!colnames(DataTotal)%in%c("ID"),drop=FALSE])
 plot(DataTotal[,10:dim(DataTotal)[2]])
 
 # Visualization-01:
