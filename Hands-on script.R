@@ -177,7 +177,7 @@ fieldView(Test.RemSoil$newMosaic,
 
 DataTotal<- fieldInfo_extra(mosaic = Test.Indices,
                             fieldShape = editShape, 
-                            fun = mean)
+                            fun = "mean")
 
 View(DataTotal)
 
