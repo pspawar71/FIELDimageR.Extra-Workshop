@@ -36,7 +36,7 @@ plotRGB(Test)
 ##################
 
 # Reading DataTable.csv:
-DataTable<-read.csv("DataTable.csv",header = T)  
+DataTable<-read.csv("fieldData.csv",header = T)  
 
 # Field Map:
 fieldMap<-fieldMap(fieldPlot=DataTable$Plot, 
